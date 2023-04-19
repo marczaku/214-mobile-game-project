@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 /// <summary>
@@ -7,14 +8,31 @@ using UnityEngine.UI;
 /// </summary>
 public class PlayerModel : MonoBehaviour
 {
-    public int maxHealth = 1000;
+    [SerializeField] int maxHealth = 1000;
     [SerializeField] int health = 50; // MODEL what is the current state of information?
     public float rotation;
-    
+
+    public UnityEvent<int> HealthChanged;
+    public UnityEvent<int> MaxHealthChanged;
+
     public int Health
     {
         get => health;
-        set => health = Mathf.Clamp(0, maxHealth, value);
+        set
+        {
+            health = Mathf.Clamp(value, 0, maxHealth);
+            HealthChanged.Invoke(health);
+        } 
+    }
+
+    public int MaxHealth
+    {
+        get => maxHealth;
+        set
+        {
+            maxHealth = value;
+            MaxHealthChanged.Invoke(maxHealth);
+        }
     }
 
     public void SetRotationDegree(float degree)
