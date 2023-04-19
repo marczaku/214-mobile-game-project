@@ -42,6 +42,6 @@ public class PlayerHealthBarView : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = player.transform.position + new Vector3(0, 1, 0);
+        //transform.position = player.transform.position + new Vector3(0, 1, 0);
     }
 }

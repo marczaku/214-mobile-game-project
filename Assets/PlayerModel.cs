@@ -6,7 +6,8 @@ using UnityEngine.UI;
 /// Very safe to add mew values to this class.
 /// Also easy to merge, even if there's conflicts.
 /// </summary>
-public class PlayerModel : MonoBehaviour
+[CreateAssetMenu]
+public class PlayerModel : ScriptableObject
 {
     [SerializeField] int maxHealth = 1000;
     [SerializeField] int health = 50; // MODEL what is the current state of information?

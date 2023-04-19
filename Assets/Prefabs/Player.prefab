@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6137820976966873659}
   - component: {fileID: 6137820976966873658}
-  - component: {fileID: 6137820976966873652}
   - component: {fileID: 23366089}
   m_Layer: 0
   m_Name: Player
@@ -46,52 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4e344b162064243936954643976372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6137820976966873652}
---- !u!114 &6137820976966873652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6137820976966873657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72b6c2cf7d445498ff4cbbde6e6c466, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 1000
-  health: 50
-  rotation: 0
-  HealthChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerHUDView, Assembly-CSharp
-        m_MethodName: OnPlayerHealthChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  MaxHealthChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerHUDView, Assembly-CSharp
-        m_MethodName: OnPlayerMaxHealthChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  player: {fileID: 0}
 --- !u!212 &23366089
 SpriteRenderer:
   m_ObjectHideFlags: 0
