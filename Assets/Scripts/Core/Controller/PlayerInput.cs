@@ -6,7 +6,8 @@ namespace Core.Controller
     public class PlayerInput : MonoBehaviour
     {
         public PlayerModel player;
-    
+
+        private int blah;
         // SINGLETON DESIGN PATTERN
         public static PlayerInput Instance;
 
