@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 5186159592599489223, guid: 697fe8e6a38234be79c75e685c159cde, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: c6da7dffb33f845ac9419bc15f0b92bf, type: 2}
     - target: {fileID: 5186159592599489226, guid: 697fe8e6a38234be79c75e685c159cde, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
