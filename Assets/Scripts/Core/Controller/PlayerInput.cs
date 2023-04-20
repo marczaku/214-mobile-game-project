@@ -10,6 +10,8 @@ namespace Core.Controller
         private int blah;
 
         private int moreBlah;
+
+        private int evenMoreBlah;
         // SINGLETON DESIGN PATTERN
         public static PlayerInput Instance;
 
