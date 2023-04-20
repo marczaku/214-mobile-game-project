@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealthBarView : MonoBehaviour
-{
+{ // test
     public PlayerModel player;
     public Image image; // VIEW how is information displayed?
 
