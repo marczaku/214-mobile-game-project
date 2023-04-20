@@ -16,7 +16,6 @@ namespace Core.Config
         private int blah;
         public int Health => health; // READ-ONLY Access {get}
         public int MaxHealth => maxHealth; // READ-ONLY Access {get}
-        
-        Shared.Config.
+        public int something;
     }
 }
